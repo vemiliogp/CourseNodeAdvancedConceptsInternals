@@ -17,7 +17,7 @@ function doRequest() {
     .end();
 }
 
-function doHash(X) {
+function doHash() {
   crypto.pbkdf2("a", "b", 100000, 512, "sha512", () => {
     console.log("Hash:", Date.now() - start);
   });
